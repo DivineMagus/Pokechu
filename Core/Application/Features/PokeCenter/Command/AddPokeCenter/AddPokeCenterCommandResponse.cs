@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Poke.Application.Features.PokeCenter.Command.AddPokeCenter
 {
-    internal class AddPokeCenterCommandResponse
+    public class AddPokeCenterCommandResponse
     {
+        public bool Success { get; set; }
+        public string Message { get; set; }
     }
 }
