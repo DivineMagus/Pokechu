@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poke.Domain.Entities
+namespace Poke.Domain.Common
 {
-    public class PokeCenter
+    internal class EntityBase : IEntityBase
     {
         public int Id { get; set; }
+        public DateTime CreatedTime { get; set; } = DateTime.Now;
         public string Name { get; set; }
-        public string Location { get; set; }
     }
 }

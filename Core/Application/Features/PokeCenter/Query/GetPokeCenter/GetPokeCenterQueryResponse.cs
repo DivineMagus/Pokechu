@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Poke.Application.Features.PokeCenter.Query.GetPokeCenter
 {
-    internal class GetPokeCenterQueryResponse
+    public class GetPokeCenterQueryResponse
     {
+        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Location { get; set; }
     }
 }

@@ -15,7 +15,7 @@ namespace Poke.Application.Features.PokeCenter.Command.AddPokeCenter
         }
         public async Task<AddPokeCenterCommandResponse> Handle(AddPokeCenterCommandRequest request, CancellationToken cancellationToken)
         {
-           //Servis İstemi Burada yApılır
+           //Servis İstemi Burada Yapılır
         }
     }
 }
