@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Poke.Domain.Entities
 {
-    internal class Pokemon
+    public class Pokemon
     {
     }
 }

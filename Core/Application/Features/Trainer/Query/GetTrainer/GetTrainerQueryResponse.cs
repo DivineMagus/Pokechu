@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poke.Domain.Entities
+namespace Poke.Application.Features.Trainer.Query.GetTrainer
 {
-    public class Trainer
+    public class GetTrainerQueryResponse
     {
     }
 }

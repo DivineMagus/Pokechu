@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Poke.Persistence.Migrations.Repositories
+namespace Poke.Application.Features.Pokemon.Query.GetPokemon
 {
-    public class ReadRepository
+    public class GetPokemonQueryRequest
     {
     }
 }

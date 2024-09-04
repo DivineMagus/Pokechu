@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Poke.Application.Features.Pokemon.Command.AddPokemon
 {
-    internal class AddPokemonCommandResponse
+    public class AddPokemonCommandResponse
     {
     }
 }
