@@ -20,29 +20,35 @@ namespace Poke.Persistence.Repositories
 
         private DbSet<T> Table { get => dbContext.Set<T>(); }
 
-        public Task<int> AddAsync(T entity)
+        public async Task AddAsync(T entity)
         {
-            throw new NotImplementedException();
+            await Table.AddAsync(entity);
         }
 
-        public Task<int> AddRangeAsync(IList<T> entity)
+        public async Task AddRangeAsync(IList<T> entities)
         {
-            throw new NotImplementedException();
+            await Table.AddRangeAsync(entities);
+        }
+        public async Task<T> UpdateAsync(T entity)
+        {
+            await Task.Run(() => Table.Update(entity));
+            return entity;
+        }
+        public async Task HardDeleteAsync(T entity)
+        {
+            await Task.Run(() => Table.Remove(entity));
         }
 
-        public Task<T> HardDeleteAsync(T entity)
+        public async Task HardDeleteRangeAsync(IList<T> entity)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Table.RemoveRange(entity));
         }
 
-        public Task<T> SoftDeleteAsync(T entity)
+        public async Task SoftDeleteAsync(T entity)
         {
-            throw new NotImplementedException();
+            await Task.Run(() => Table.Update(entity));
         }
 
-        public Task<T> UpdateAsync(T entity)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

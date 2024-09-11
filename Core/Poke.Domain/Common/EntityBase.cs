@@ -10,6 +10,6 @@ namespace Poke.Domain.Common
     {
         public int Id { get; set; }
         public DateTime CreatedTime { get; set; } = DateTime.Now;
-        public string Name { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }

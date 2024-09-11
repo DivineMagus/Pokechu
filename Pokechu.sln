@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{64E631DC-0D83-4C19-B21D-374E50D7F3FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "Presentation\WebAPI\WebAPI.csproj", "{6C73A107-80E0-449E-8574-04D9B5CADD95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "Presentation\WebAPI\WebAPI.csproj", "{6C73A107-80E0-449E-8574-04D9B5CADD95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poke.Domain", "Core\Poke.Domain\Poke.Domain.csproj", "{806556CB-7530-4FD8-95C5-D271636151F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poke.Domain", "Core\Poke.Domain\Poke.Domain.csproj", "{806556CB-7530-4FD8-95C5-D271636151F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poke.Application", "Core\Application\Poke.Application.csproj", "{0906FCC1-217E-4FAD-8E04-EB8DE593540C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poke.Application", "Core\Application\Poke.Application.csproj", "{0906FCC1-217E-4FAD-8E04-EB8DE593540C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poke.Infrastructure", "Infrastructure\Poke.Infrastructure\Poke.Infrastructure.csproj", "{C10BE39B-DC07-4C99-A193-F421AB46FC6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poke.Infrastructure", "Infrastructure\Poke.Infrastructure\Poke.Infrastructure.csproj", "{C10BE39B-DC07-4C99-A193-F421AB46FC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poke.Persistence", "Infrastructure\Poke.Persistence\Poke.Persistence.csproj", "{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Poke.Persistence", "Infrastructure\Poke.Persistence\Poke.Persistence.csproj", "{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poke.Mapper", "Poke.Mapper\Poke.Mapper.csproj", "{1A4ACF74-0877-454C-8240-86178D789EE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A4ACF74-0877-454C-8240-86178D789EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A4ACF74-0877-454C-8240-86178D789EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A4ACF74-0877-454C-8240-86178D789EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A4ACF74-0877-454C-8240-86178D789EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{0906FCC1-217E-4FAD-8E04-EB8DE593540C} = {CA14332D-7DCD-4991-8F2D-F75F54459824}
 		{C10BE39B-DC07-4C99-A193-F421AB46FC6B} = {37D5ECAC-C90B-4CD9-A310-A22CAFA2D7CC}
 		{9C73A71F-1C63-4D26-93D9-2F34DBEEC6EC} = {37D5ECAC-C90B-4CD9-A310-A22CAFA2D7CC}
+		{1A4ACF74-0877-454C-8240-86178D789EE3} = {CA14332D-7DCD-4991-8F2D-F75F54459824}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0272BDFB-FAB1-4A1A-B3B6-48AA3BD92AD5}
